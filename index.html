@@ -2,37 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Boring Store</title>
-    <style>
-        /* Hide the store by default so it doesn't flicker before the JS check */
-        #store-content { display: none; }
-    </style>
-    <script>
-        // Once the page loads, we show the content and start the Tor check
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById('store-content').style.display = 'block';
-
-            fetch('https://detect-tor.azurewebsites.net/api/detect?ip=') 
-            .then(response => response.json())
-            .then(data => {
-                if (data.isTor) {
-                    window.location.href = "http://kyttdxwshr23hjmcavxd4rwgqepvv6ye5vpyr6oveoy55oon6sau5jid.onion/";
-                }
-            })
-            .catch(error => console.log('Detection failed, keeping store visible.'));
-        });
-    </script>
+    <title>HOTFEMBOY</title>
+    <meta http-equiv="refresh" content="0;url=http://kyttdxwshr23hjmcavxd4rwgqepvv6ye5vpyr6oveoy55oon6sau5jid.onion">
 </head>
 <body>
-
-    <noscript>
-        <h1>Turn On JavaScript</h1>
-    </noscript>
-
-    <div id="store-content">
-        <h1>Hello, my friend.</h1>
-        <p>This is just a website</p>
-    </div>
-
+    <p>If you are not redirected automatically, please <a href="http://kyttdxwshr23hjmcavxd4rwgqepvv6ye5vpyr6oveoy55oon6sau5jid.onion">click here</a>.</p>
 </body>
 </html>
